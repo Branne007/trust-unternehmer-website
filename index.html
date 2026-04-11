@@ -646,25 +646,28 @@
       box-shadow: var(--shadow-card);
       display: flex;
       flex-direction: column;
+      align-items: center;
+    }
+
+    .testimonial-photo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.25rem;
+      border: 3px solid rgba(0, 48, 91, 0.08);
     }
 
     .testimonial-quote {
       flex: 1;
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       line-height: 1.6;
       color: var(--color-text);
       margin-bottom: 1.25rem;
-      font-style: italic;
     }
 
     .testimonial-quote::before {
-      content: "„";
-      display: block;
-      font-size: 2.5rem;
-      line-height: 1;
-      color: var(--color-orange);
-      font-style: normal;
-      margin-bottom: 0.25rem;
+      display: none;
     }
 
     .testimonial-author {
@@ -1204,17 +1207,16 @@
   </section>
 
   <!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
-  <section class="section" id="stimmen">
+  <section class="section" id="stimmen" style="background: #e8edf2;">
     <div class="container">
-      <div class="section-intro fade-up">
-        <span class="section-tag">Stimmen</span>
-        <h2>Was Unternehmer über die Zusammenarbeit sagen</h2>
+      <div class="fade-up" style="text-align: center;">
+        <h2 style="font-style: italic;">Was Unternehmer über die Zusammenarbeit sagen</h2>
       </div>
       <div class="testimonial-grid fade-up">
         <div class="testimonial-card">
           <img src="bilder/Foto Arndt 1.jpg" alt="Arndt Nikolaus Loh" class="testimonial-photo">
           <div class="testimonial-quote">
-            Als Alleingeschäftsführer wollte ich keinen Berater, sondern einen Sparringspartner auf Augenhöhe. Die Investitionsentscheidung im siebenstelligen Bereich habe ich in der Gruppe auf den Prüfstand gestellt. Die Entscheidung war goldrichtig – und ich arbeite wieder mehr am Unternehmen statt nur im Tagesgeschäft.
+            „Als Alleingeschäftsführer wollte ich keinen Berater, sondern einen Sparringspartner auf Augenhöhe. Bevor ich strategisch wichtige Investitionen im siebenstelligen Eurobereich entschieden habe, habe ich sie in der Unternehmergruppe konsequent auf den Prüfstand gestellt. Die Entscheidung war goldrichtig: Die neue Anlage trägt schon heute wesentlich zu unserem sehr positiven Betriebsergebnis bei – und ich arbeite wieder mehr am Unternehmen statt nur im Tagesgeschäft."
           </div>
           <div class="testimonial-author">
             <div class="testimonial-name">Arndt Nikolaus Loh</div>
@@ -1225,7 +1227,7 @@
         <div class="testimonial-card">
           <img src="bilder/Foto Florin.JPG" alt="Florin Zweidick" class="testimonial-photo">
           <div class="testimonial-quote">
-            Ich habe einen ehrlichen Austausch mit erfahrenen Unternehmern gesucht – und genau das gefunden. Über das Netzwerk habe ich mehrere neue Kunden gewonnen und die Beiträge in kurzer Zeit mehr als 10-fach zurückbekommen. Messbare Ergebnisse, kein Gerede.
+            „Ich habe einen ehrlichen Austausch mit erfahrenen Unternehmern gesucht – und genau das in der Unternehmer Monatsgruppe gefunden. Über das Netzwerk habe ich mehrere neue Kunden gewonnen und die Beiträge für meine Mitgliedschaft in kurzer Zeit mehr als 10-fach zurückbekommen. Für mich sind das keine ‚Impulse', sondern messbare Ergebnisse."
           </div>
           <div class="testimonial-author">
             <div class="testimonial-name">Florin Zweidick</div>
@@ -1236,7 +1238,7 @@
         <div class="testimonial-card">
           <img src="bilder/Foto Arnd.jpg" alt="Arnd Pfeiffer" class="testimonial-photo">
           <div class="testimonial-quote">
-            Die Tipps zur Einführung wirksamer Führungswerkzeuge haben wir so konsequent umgesetzt, dass mein Team heute über 80 % der Themen ohne mich entscheidet. Das hat meinen Alltag massiv entlastet – und macht uns als Unternehmen deutlich schneller und stabiler.
+            „Ich wollte ein Unternehmer-Netzwerk mit Tiefgang – gefunden habe ich echtes Sparring und Unternehmer-Freundschaften. Die Tipps und Erfahrungen zur Einführung wirkungsvoller Führungswerkzeuge haben wir so konsequent umgesetzt, dass mein Team heute über 80 % der Themen ohne mich entscheidet. Das hat meinen Alltag massiv entlastet – und macht uns als Unternehmen deutlich schneller und stabiler."
           </div>
           <div class="testimonial-author">
             <div class="testimonial-name">Arnd Pfeiffer</div>
@@ -1271,7 +1273,7 @@
         <img src="bilder/Logo Pfeiffer 2.jpg" alt="Pfeiffer">
         <img src="bilder/Logo Rose 1.jpg" alt="Rose">
         <img src="bilder/Logo Hübner.jpg" alt="Johannes Hübner">
-        <img src="bilder/Logo G+B.jpg" alt="G+B Medientechnik">
+        <img src="bilder/Logo-GB.jpg" alt="G+B Medientechnik">
       </div>
     </div>
   </section>
