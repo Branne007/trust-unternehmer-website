@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TRUST Unternehmer | Weniger Feuer löschen. Mehr am Unternehmen arbeiten.</title>
-  <meta name="description" content="Ich bringe ambitionierte KMU-Inhaber zusammen, die bereit sind, sich vom getriebenen Macher zum gestaltenden Unternehmer zu entwickeln – mit Erfahrung, Sparring und KI.">
+  <meta name="description" content="Gemeinsam erfolgreicher: Als BVMW-Repräsentant und Unternehmer mit 40 Jahren Erfahrung bringe ich Inhaber im Mittelstand der Region zusammen. Austausch, Sparring und KI. Nicht allein.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
@@ -354,49 +354,6 @@
       font-size: 1.02rem;
       color: var(--color-gray);
     }
-
-    /* ─── STAKES SECTION ─── */
-    .stakes-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .stake-box {
-      padding: 2rem;
-      border-radius: var(--radius-lg);
-    }
-
-    .stake-box.negative {
-      background: #fdf2f2;
-      border: 1px solid #f5c6c6;
-    }
-
-    .stake-box.positive {
-      background: #f0faf4;
-      border: 1px solid #b6e2c8;
-    }
-
-    .stake-box h3 {
-      margin: 0 0 1rem;
-      font-size: 1.35rem;
-    }
-
-    .stake-box.negative h3 { color: #9b2c2c; }
-    .stake-box.positive h3 { color: #276749; }
-
-    .stake-box p, .stake-box li {
-      font-size: 1.05rem;
-      line-height: 1.55;
-    }
-
-    .stake-box ul {
-      margin: 0;
-      padding-left: 1.2rem;
-    }
-
-    .stake-box li + li { margin-top: 0.6rem; }
 
     /* ─── PLAN / STEPS ─── */
     .steps-row {
@@ -749,35 +706,6 @@
       filter: grayscale(0%);
     }
 
-    /* ─── EINWÄNDE ─── */
-    .einwand-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .einwand-card {
-      padding: 1.75rem;
-      background: var(--color-white);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-card);
-      border: 1px solid rgba(0, 48, 91, 0.07);
-    }
-
-    .einwand-card h3 {
-      margin: 0 0 0.75rem;
-      font-size: 1.2rem;
-      color: var(--color-orange);
-      font-style: italic;
-    }
-
-    .einwand-card p {
-      margin: 0;
-      font-size: 1.02rem;
-      color: var(--color-text);
-    }
-
     /* ─── FAQ ─── */
     .faq-list {
       max-width: 48rem;
@@ -890,6 +818,36 @@
       margin-left: 1.25rem;
     }
 
+    /* ─── HERO CLAIM ─── */
+    .hero-claim {
+      margin: 0 0 2rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--color-orange);
+    }
+
+    /* ─── COBRAND / NETZWERK ─── */
+    .cobrand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .cobrand { gap: 3rem; }
+    .cobrand img { height: 58px; width: auto; }
+    .cobrand-divider { width: 1px; height: 54px; background: var(--color-border); }
+    .format-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-top: 1.75rem;
+    }
+    .format-chips .credential-tag { font-size: 1rem; padding: 0.6rem 1.15rem; }
+
     /* ─── ANIMATIONS ─── */
     .fade-up {
       opacity: 0;
@@ -905,12 +863,10 @@
     /* ─── RESPONSIVE ─── */
     @media (max-width: 980px) {
       .problem-grid,
-      .stakes-grid,
       .steps-row,
       .peer-features,
       .ki-examples,
       .testimonial-grid,
-      .einwand-grid,
       .guide-grid,
       .footer-grid {
         grid-template-columns: 1fr;
@@ -956,8 +912,9 @@
       <nav class="header-nav">
         <a href="#problem">Herausforderung</a>
         <a href="#weg">Dein Weg</a>
-        <a href="#treppe">Entwicklungs-Treppe</a>
+        <a href="#netzwerk">Netzwerk</a>
         <a href="#gruppe">Unternehmergruppe</a>
+        <a href="#treppe">Entwicklungs-Treppe</a>
         <a href="#about">Über mich</a>
         <a href="#start" class="btn btn-primary btn-header">Score starten</a>
       </nav>
@@ -974,8 +931,9 @@
         <span class="eyebrow">Für Inhaber & Geschäftsführer von KMU</span>
         <h1>Weniger Feuer löschen.<br>Mehr am Unternehmen arbeiten.</h1>
         <p class="hero-text">
-          Du trägst die volle Verantwortung – und trotzdem läuft dein Unternehmen nur, solange du selbst ständig eingreifst. Wenn du das ändern willst, bist du hier richtig.
+          Du trägst die volle Verantwortung, und das Tempo zieht an. Regulierung, Fachkräftemangel, KI. Allein hält da kaum jemand mit. Gemeinsam mit anderen Unternehmern entscheidest du sicherer und kommst schneller voran.
         </p>
+        <p class="hero-claim">Nicht allein. Gemeinsam erfolgreicher.</p>
         <div class="hero-actions">
           <a href="#start" class="btn btn-primary btn-large">Unternehmer-Score starten →</a>
           <a href="#gespraech" class="btn btn-secondary btn-large">Klarheitsgespräch buchen</a>
@@ -1030,38 +988,8 @@
     </div>
   </section>
 
-  <!-- ═══════════════════ STAKES ═══════════════════ -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-intro fade-up">
-        <span class="section-tag">Was auf dem Spiel steht</span>
-        <h2>Zwei Wege. Deine Entscheidung.</h2>
-      </div>
-      <div class="stakes-grid fade-up">
-        <div class="stake-box negative">
-          <h3>❌ Wenn du so weitermachst</h3>
-          <ul>
-            <li>Du bleibst der Engpass – und wirst es immer mehr</li>
-            <li>Dein Wettbewerb automatisiert mit KI, während du Formulare ausfüllst</li>
-            <li>Dein Unternehmen ist ohne dich nicht attraktiv – weder für eine Nachfolge noch für deine Lebensqualität</li>
-            <li>Du arbeitest hart, aber nicht smart</li>
-          </ul>
-        </div>
-        <div class="stake-box positive">
-          <h3>✓ Stell dir stattdessen vor</h3>
-          <ul>
-            <li>Dein Team trifft 80 % der Entscheidungen eigenständig</li>
-            <li>KI erledigt den Papierkram – deine Leute arbeiten an Qualität und Kunden</li>
-            <li>Du arbeitest am Unternehmen, nicht nur im Tagesgeschäft</li>
-            <li>Du triffst bessere Entscheidungen, weil du sie mit Gleichgesinnten durchdenkst</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ═══════════════════ PLAN / 3 SCHRITTE ═══════════════════ -->
-  <section class="section" id="weg">
+  <section class="section section-alt" id="weg">
     <div class="container">
       <div class="section-intro fade-up">
         <span class="section-tag">Dein Weg</span>
@@ -1090,16 +1018,62 @@
     </div>
   </section>
 
-  <!-- ═══════════════════ TREPPE ═══════════════════ -->
-  <section class="section section-alt" id="treppe">
+  <!-- ═══════════════════ NETZWERK / BVMW ═══════════════════ -->
+  <section class="section" id="netzwerk">
+    <div class="container">
+      <div class="cobrand fade-up">
+        <img src="bilder/TRUST-Hauptlogo-horizontal.svg" alt="TRUST Unternehmer">
+        <span class="cobrand-divider" aria-hidden="true"></span>
+        <img src="bilder/bvmw-logo.svg" alt="Der Mittelstand. BVMW">
+      </div>
+      <div class="section-intro fade-up" style="text-align: center; max-width: 56rem; margin-left: auto; margin-right: auto;">
+        <span class="section-tag">Das Netzwerk in der Region</span>
+        <h2>Gemeinsam erfolgreicher</h2>
+        <p>
+          Das Tempo zieht an, allein hält da kaum jemand mit. Als BVMW-Repräsentant für Lahn-Dill und Limburg-Weilburg bringe ich Unternehmer der Region persönlich zusammen. Der BVMW gibt Reichweite und Netzwerk, TRUST gibt Tiefe und Sparring. Zusammen entsteht der Ort, an dem man sich kennenlernt, offen austauscht und schneller vorankommt.
+        </p>
+      </div>
+      <div class="format-chips fade-up">
+        <span class="credential-tag">Unternehmer-Frühstück</span>
+        <span class="credential-tag">Unternehmer-Lunch</span>
+        <span class="credential-tag">Mittelstandstreff am Abend</span>
+        <span class="credential-tag">Themenbezogene Runde Tische</span>
+      </div>
+      <div class="fade-up" style="text-align: center; margin-top: 2.25rem;">
+        <a href="#gespraech" class="btn btn-primary btn-large">Beim nächsten Treffen kennenlernen →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ KI ═══════════════════ -->
+  <section class="section section-dark" id="ki">
     <div class="container">
       <div class="section-intro fade-up">
-        <span class="section-tag">Orientierungsrahmen</span>
-        <h2>Die Unternehmer-Entwicklungs-Treppe®</h2>
-        <p>Ein klarer Entwicklungsweg vom getriebenen Macher zum gestaltenden Unternehmer – Schritt für Schritt, auf deine Situation abgestimmt.</p>
+        <span class="section-tag" style="color: #ffc98a;">KI als Beschleuniger</span>
+        <h2>Künstliche Intelligenz – vom Spielzeug zum Werkzeug</h2>
+        <p style="color: rgba(255,255,255,0.82);">
+          Vergiss die ChatGPT-Spielereien von gestern. Ich helfe dir dabei, die Möglichkeiten der KI so zu nutzen, dass sie dich und deine Mitarbeiter wirkungsvoll unterstützt. Nicht als Selbstzweck, sondern als konkretes Werkzeug. Auch hier nutzen wir die Kraft der Gruppe, um voneinander zu lernen und schneller voran zu kommen.
+        </p>
       </div>
-      <div class="fade-up" style="margin-top: 2rem;">
-        <img src="bilder/Unternehmer-Entwicklungs-Treppe.png" alt="Die 5 Stufen der Unternehmer-Entwicklungs-Treppe" style="width: 100%; max-width: 800px; margin: 0 auto; display: block; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+      <div class="ki-examples fade-up">
+        <div class="ki-card">
+          <h3>Verwaltung automatisieren</h3>
+          <p>KI-Agenten für Rechnungseingang, E-Mail-Sortierung, Einkaufsprozesse, Reporting, etc. – die Routinearbeit, die dein Team bindet.</p>
+          <div class="ki-result">→ Stunden pro Woche zurückgewinnen</div>
+        </div>
+        <div class="ki-card">
+          <h3>Vertrieb beschleunigen</h3>
+          <p>Marktrecherche, Lead-Qualifizierung, Angebotserstellung, Angebotsverfolgung, Auftragsgewinnung, Potenzialanalysen, etc. – in Minuten statt Tagen.</p>
+          <div class="ki-result">→ Schneller zum Abschluss</div>
+        </div>
+        <div class="ki-card">
+          <h3>Entscheidungen fundieren</h3>
+          <p>Wettbewerbsanalysen, Marktdaten, Strategieoptionen, Bilanzanalysen, interne Kennzahlen – aufbereitet, wenn du sie brauchst.</p>
+          <div class="ki-result">→ Bessere Entscheidungen treffen</div>
+        </div>
+      </div>
+      <div class="fade-up" style="text-align: center; margin-top: 2.5rem;">
+        <a href="https://projekt-ki-implementierung-kmu.trust-unternehmer.de/" target="_blank" rel="noopener" class="btn btn-primary btn-large">Zum KI-Implementierungs-Projekt für KMU →</a>
       </div>
     </div>
   </section>
@@ -1149,38 +1123,22 @@
     </div>
   </section>
 
-  <!-- ═══════════════════ KI ═══════════════════ -->
-  <section class="section section-dark" id="ki">
+  <!-- ═══════════════════ TREPPE ═══════════════════ -->
+  <section class="section section-alt" id="treppe">
     <div class="container">
       <div class="section-intro fade-up">
-        <span class="section-tag" style="color: #ffc98a;">KI als Beschleuniger</span>
-        <h2>Künstliche Intelligenz – vom Spielzeug zum Werkzeug</h2>
-        <p style="color: rgba(255,255,255,0.82);">
-          Vergiss die ChatGPT-Spielereien von gestern. Ich helfe dir dabei, die Möglichkeiten der KI so zu nutzen, dass sie dich und deine Mitarbeiter wirkungsvoll unterstützt. Nicht als Selbstzweck, sondern als konkretes Werkzeug. Auch hier nutzen wir die Kraft der Gruppe, um voneinander zu lernen und schneller voran zu kommen.
-        </p>
+        <span class="section-tag">Orientierungsrahmen</span>
+        <h2>Die Unternehmer-Entwicklungs-Treppe®</h2>
+        <p>Ein klarer Entwicklungsweg vom getriebenen Macher zum gestaltenden Unternehmer – Schritt für Schritt, auf deine Situation abgestimmt.</p>
       </div>
-      <div class="ki-examples fade-up">
-        <div class="ki-card">
-          <h3>Verwaltung automatisieren</h3>
-          <p>KI-Agenten für Rechnungseingang, E-Mail-Sortierung, Einkaufsprozesse, Reporting, etc. – die Routinearbeit, die dein Team bindet.</p>
-          <div class="ki-result">→ Stunden pro Woche zurückgewinnen</div>
-        </div>
-        <div class="ki-card">
-          <h3>Vertrieb beschleunigen</h3>
-          <p>Marktrecherche, Lead-Qualifizierung, Angebotserstellung, Angebotsverfolgung, Auftragsgewinnung, Potenzialanalysen, etc. – in Minuten statt Tagen.</p>
-          <div class="ki-result">→ Schneller zum Abschluss</div>
-        </div>
-        <div class="ki-card">
-          <h3>Entscheidungen fundieren</h3>
-          <p>Wettbewerbsanalysen, Marktdaten, Strategieoptionen, Bilanzanalysen, interne Kennzahlen – aufbereitet, wenn du sie brauchst.</p>
-          <div class="ki-result">→ Bessere Entscheidungen treffen</div>
-        </div>
+      <div class="fade-up" style="margin-top: 2rem;">
+        <img src="bilder/Unternehmer-Entwicklungs-Treppe.png" alt="Die 5 Stufen der Unternehmer-Entwicklungs-Treppe" style="width: 100%; max-width: 800px; margin: 0 auto; display: block; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
       </div>
     </div>
   </section>
 
   <!-- ═══════════════════ ABOUT / GUIDE ═══════════════════ -->
-  <section class="section section-alt" id="about">
+  <section class="section" id="about">
     <div class="container">
       <div class="guide-grid fade-up">
         <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-soft);">
@@ -1267,7 +1225,7 @@
   </section>
 
   <!-- ═══════════════════ KUNDENLOGOS ═══════════════════ -->
-  <section class="section" style="padding: 2rem 0;">
+  <section class="section section-alt" style="padding: 2rem 0;">
     <div class="container">
       <div class="logo-bar fade-up">
         <img src="bilder/Logo Aherhammer.jpeg" alt="Aherhammer">
@@ -1281,32 +1239,35 @@
     </div>
   </section>
 
-  <!-- ═══════════════════ EINWÄNDE ═══════════════════ -->
-  <section class="section section-alt" id="einwaende">
+  <!-- ═══════════════════ EINSTIEG / CTA ═══════════════════ -->
+  <section class="section" id="start">
     <div class="container">
       <div class="section-intro fade-up">
-        <span class="section-tag">Ehrliche Antworten</span>
-        <h2 style="white-space: nowrap;">Typische Einwände – und meine Meinung dazu</h2>
+        <span class="section-tag">Jetzt starten</span>
+        <h2 style="white-space: nowrap;">Dein Einstieg – kostenlos und unverbindlich</h2>
+        <p>Wo stehst du und was sind deine wirkungsvollsten Hebel?</p>
       </div>
-      <div class="einwand-grid fade-up">
-        <div class="einwand-card">
-          <h3>„Ich habe keine Zeit."</h3>
-          <p>Genau deshalb: Jeder gute Tipp verhindert Fehler, sorgt für bessere Entscheidungen und erspart dir viel Zeit für Ausprobieren und Korrigieren. Und du wirst viele gute Tipps bekommen.</p>
+      <div class="fade-up" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem;">
+        <div class="step-card">
+          <div class="step-num">📊</div>
+          <h3>Unternehmer-Score</h3>
+          <p>40 Fragen. 10 Minuten. Eine fundierte Standortbestimmung deines unternehmerischen Reifegrads.</p>
+          <br>
+          <a href="https://unternehmer-score.trust-unternehmer.de/" class="btn btn-primary" style="width:100%">Score starten →</a>
         </div>
-        <div class="einwand-card">
-          <h3>„Ich habe schon Netzwerke."</h3>
-          <p>Bei uns geht es nicht um Visitenkartenformate und Smalltalk. Es geht um vertrauliches Sparring mit Tiefgang und Fokus auf Umsetzung – wie ein externer Beirat.</p>
-        </div>
-        <div class="einwand-card">
-          <h3>„Lohnt sich das?"</h3>
-          <p>Eine einzige bessere Entscheidung kann schon mehr wert sein als dein ganzes Jahresinvestment. Am besten sprichst du mit aktiven Mitgliedern. Frage mich gerne nach Kontakten.</p>
+        <div class="step-card">
+          <div class="step-num">💬</div>
+          <h3>Klarheitsgespräch</h3>
+          <p>30 Minuten. 1:1 persönlich. Wir sprechen über deinen Score, deine Ziele, deine Engpässe und deinen Weg.</p>
+          <br>
+          <a href="#gespraech" class="btn btn-outline" style="width:100%">Gespräch buchen</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════════ FAQ ═══════════════════ -->
-  <section class="section">
+  <section class="section section-alt">
     <div class="container">
       <div class="section-intro fade-up">
         <span class="section-tag">Häufige Fragen</span>
@@ -1343,32 +1304,17 @@
           </button>
           <div class="faq-answer"><p>Oft sofort: Klarheit und Prioritäten. Die Umsetzung hängt vom gewählten Weg ab – aber die ersten Hebel wirken schnell.</p></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ EINSTIEG / CTA ═══════════════════ -->
-  <section class="section section-alt" id="start">
-    <div class="container">
-      <div class="section-intro fade-up">
-        <span class="section-tag">Jetzt starten</span>
-        <h2 style="white-space: nowrap;">Dein Einstieg – kostenlos und unverbindlich</h2>
-        <p>Wo stehst du und was sind deine wirkungsvollsten Hebel?</p>
-      </div>
-      <div class="fade-up" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem;">
-        <div class="step-card">
-          <div class="step-num">📊</div>
-          <h3>Unternehmer-Score</h3>
-          <p>40 Fragen. 10 Minuten. Eine fundierte Standortbestimmung deines unternehmerischen Reifegrads.</p>
-          <br>
-          <a href="https://unternehmer-score.trust-unternehmer.de/" class="btn btn-primary" style="width:100%">Score starten →</a>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            Ich habe kaum Zeit. Passt das überhaupt? <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-answer"><p>Genau deshalb. Jeder gute Impuls verhindert Fehler, führt zu besseren Entscheidungen und erspart dir Zeit für Ausprobieren und Korrigieren. Und du bekommst viele davon.</p></div>
         </div>
-        <div class="step-card">
-          <div class="step-num">💬</div>
-          <h3>Klarheitsgespräch</h3>
-          <p>30 Minuten. 1:1 persönlich. Wir sprechen über deinen Score, deine Ziele, deine Engpässe und deinen Weg.</p>
-          <br>
-          <a href="#gespraech" class="btn btn-outline" style="width:100%">Gespräch buchen</a>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            Lohnt sich das? <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-answer"><p>Eine einzige bessere Entscheidung kann mehr wert sein als dein ganzes Jahresinvestment. Sprich am besten mit aktiven Mitgliedern, ich nenne dir gern Kontakte.</p></div>
         </div>
       </div>
     </div>
@@ -1396,7 +1342,7 @@
         <div class="footer-brand">
           <div style="display:flex;align-items:center;gap:2rem;margin-bottom:1.5rem;">
             <img src="bilder/TRUST-Negativ-horizontal.svg" alt="TRUST Unternehmer" style="height:56px;width:auto;">
-            <img src="bilder/Mitgliedsunternehmen-Der-Mittelstand-BVMW-weiss.svg" alt="Mitglied im Mittelstand. BVMW." style="height:56px;width:auto;opacity:0.85;">
+            <img src="bilder/bvmw-logo-weiss.svg" alt="Der Mittelstand. BVMW" style="height:56px;width:auto;">
           </div>
           <div>
             TB UnternehmerImpulse eG<br>
@@ -1409,6 +1355,7 @@
           <a href="#start">Unternehmer-Score</a>
           <a href="#gespraech">Klarheitsgespräch</a>
           <a href="#gruppe">Unternehmergruppen</a>
+          <a href="#netzwerk">Netzwerk &amp; BVMW</a>
           <a href="#treppe">Entwicklungs-Treppe</a>
           <a href="#ki">KI-Implementierung</a>
         </div>
